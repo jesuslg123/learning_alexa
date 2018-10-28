@@ -1,0 +1,50 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "aprendiendo",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "say hello world",
+                        "hello world",
+                        "hola mundo di hola mundo",
+                        "di hola mundo",
+                        "hola mundo"
+                    ]
+                },
+                {
+                    "name": "StopIntent",
+                    "slots": [
+                        {
+                            "name": "stopNumber",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "informacion parada {stopNumber}",
+                        "parada {stopNumber}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
