@@ -1,8 +1,20 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "aprendiendo",
+            "invocationName": "espacio de datos",
             "intents": [
+                {
+                    "name": "ObtenerNuevoDatoIntent",
+                    "slots": [],
+                    "samples": [
+                        "un dato",
+                        "un dato del espacio",
+                        "dime un dato",
+                        "dime un dato del espacio",
+                        "dame un dato",
+                        "dame un dato del espacio"
+                    ]
+                },
                 {
                     "name": "AMAZON.CancelIntent",
                     "samples": []
@@ -16,22 +28,7 @@
                     "samples": []
                 },
                 {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
-                },
-                {
-                    "name": "HelloWorldIntent",
-                    "slots": [],
-                    "samples": [
-                        "say hello world",
-                        "hello world",
-                        "hola mundo di hola mundo",
-                        "di hola mundo",
-                        "hola mundo"
-                    ]
-                },
-                {
-                    "name": "StopIntent",
+                    "name": "StopNumberIntent",
                     "slots": [
                         {
                             "name": "stopNumber",
@@ -39,6 +36,8 @@
                         }
                     ],
                     "samples": [
+                        "dame informacion {stopNumber}",
+                        "dame informacion parada {stopNumber}",
                         "informacion parada {stopNumber}",
                         "parada {stopNumber}"
                     ]
